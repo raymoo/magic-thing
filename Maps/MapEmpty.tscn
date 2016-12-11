@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://MapElements/Block.tscn" type="PackedScene" id=1]
+
+[node name="MapEmpty" type="Node2D"]
+
+[node name="Top" parent="." instance=ExtResource( 1 )]
+
+transform/scale = Vector2( 10, 0.5 )
+z/z = 1
+
+[node name="Bottom" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 0, 850 )
+transform/scale = Vector2( 10, 0.5 )
+z/z = 1
+
+[node name="Left" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 0, 50 )
+transform/scale = Vector2( 0.5, 8 )
+z/z = 1
+
+[node name="Right" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 950, 50 )
+transform/scale = Vector2( 0.5, 8 )
+z/z = 1
+
+
